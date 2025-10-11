@@ -1,6 +1,6 @@
 
 .expo/
-.node_modules
+.node_modules/
 dist/
 npm-debug.*
 *.jks
