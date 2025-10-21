@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Slot, SplashScreen } from 'expo-router';
+import { Slot, SplashScreen, Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
 import '../global.css'; // Tailwind
 
@@ -19,5 +19,5 @@ export default function RootLayout() {
 
     if (!fontsLoaded && !error) return null;
 
-    return <Slot />; // Aquí se renderizan tus pantallas hijas
+    return <Stack />;
 }
