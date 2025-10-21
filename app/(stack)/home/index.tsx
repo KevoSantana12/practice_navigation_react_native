@@ -1,4 +1,4 @@
-import CustomButton from 'app/components/shared/CustomButton'
+import CustomButton from 'app/(stack)/components/shared/CustomButton'
 import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
 import { Link, router } from 'expo-router'

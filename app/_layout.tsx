@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Slot, SplashScreen, Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
 import '../global.css'; // Tailwind
+import { View, Text } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -19,5 +20,6 @@ export default function RootLayout() {
 
     if (!fontsLoaded && !error) return null;
 
-    return <Stack />;
+    return <Slot />
+
 }
