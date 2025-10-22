@@ -1,11 +1,14 @@
 import CustomButton from 'app/(stack)/components/shared/CustomButton'
 import { View, Text, SafeAreaView } from 'react-native'
 import React from 'react'
-import { Link, router } from 'expo-router'
+import { Stack, Link, router } from 'expo-router'
+
 
 const HomeScreen = () => {
     return (
         <SafeAreaView>
+            <Stack.Screen options={{ title: 'Home Page' }} />
+
             <View className='px-10 mt-10'>
 
 
