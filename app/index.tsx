@@ -23,8 +23,15 @@ export default function Index() {
                     </Link>
                 </View> */
 
-        <Redirect href='/(stack)/'>
+        /*         <Redirect href='/(stack)/'>
+        
+                </Redirect> */
+
+        <Redirect href='/tabs/'>
 
         </Redirect>
+
+
+
     );
 }

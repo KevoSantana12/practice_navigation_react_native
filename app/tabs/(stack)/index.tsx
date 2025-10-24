@@ -10,12 +10,12 @@ export default function StackIndex() {
         
                     <Text className="text-xl font-bold">🌟 Link para testear el home</Text>
         
-                    <Link href="home"> Test </Link>
+                    <Link href="/tabs/(stack)/home"> Test </Link>
         
         
                 </View> */
 
-        <Redirect href='/home'>
+        <Redirect href='/tabs/(stack)/home'>
 
         </Redirect>
     );
