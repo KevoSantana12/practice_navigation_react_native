@@ -5,7 +5,32 @@ import { Tabs } from 'expo-router'
 
 const _layoutTabs = () => {
     return (
-        <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+        <Tabs screenOptions={{
+            headerShown: false,
+            tabBarActiveTintColor: '#4F46E5', // Indigo más elegante
+            tabBarInactiveTintColor: '#9CA3AF', // Gris sutil
+            tabBarStyle: {
+                backgroundColor: '#fff',
+                borderTopWidth: 0,
+                elevation: 10,
+                shadowColor: '#000',
+                shadowOpacity: 0.1,
+                shadowRadius: 8,
+                height: 65,
+                borderTopLeftRadius: 25,
+                borderTopRightRadius: 25,
+                position: 'absolute',
+                bottom: 10,
+                left: 10,
+                right: 10,
+            },
+            tabBarLabelStyle: {
+                fontSize: 13,
+                fontWeight: '600',
+                marginBottom: 5,
+            },
+
+        }}>
             {/*            <Tabs.Screen
                 name="(stack)"
                 options={{
