@@ -1,11 +1,18 @@
-import { View, Text } from 'react-native'
+import { View, Text, Button, Pressable } from 'react-native'
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import React from 'react'
 import { Tabs } from 'expo-router'
+import { useNavigation, DrawerActions } from '@react-navigation/native';
+import { DrawerToggleButton } from '@react-navigation/drawer';
+
 
 const _layoutTabs = () => {
+
+    const navigation = useNavigation();
+
     return (
         <Tabs screenOptions={{
+            headerLeft: () => <DrawerToggleButton tintColor="#4F46E5" />,
             headerShown: false,
             tabBarActiveTintColor: '#4F46E5', // Indigo más elegante
             tabBarInactiveTintColor: '#9CA3AF', // Gris sutil
@@ -31,6 +38,18 @@ const _layoutTabs = () => {
             },
 
         }}>
+
+            <Tabs
+                screenOptions={{
+                    // You can also add a custom button to the header here if needed
+                    headerRight: () => (
+                        <Pressable onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
+                            <Text>Menu</Text>
+                        </Pressable>
+                    ),
+                }}
+            ></Tabs>
+
             {/*            <Tabs.Screen
                 name="(stack)"
                 options={{
