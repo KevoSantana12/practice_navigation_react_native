@@ -27,7 +27,7 @@ export default function Index() {
         
                 </Redirect> */
 
-        <Redirect href='/tabs/'>
+        <Redirect href='(drawer)'>
 
         </Redirect>
 
